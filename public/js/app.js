@@ -42086,6 +42086,11 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
         this.message = '';
       }
     }
+  },
+  mounted: function mounted() {
+    Echo.private('chat').listen('ChatEvent', function (e) {
+      console.log(e);
+    });
   }
 });
 
