@@ -22,6 +22,7 @@
                           <message
                           v-for="value in chat.message"
                           :key = "value.index"
+                          color = 'primary'
                           >
                               @{{ value }}
                           </message>
