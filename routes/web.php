@@ -20,5 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('chat','ChatController@chat');
-Route::post('send','ChatController@send');
+Route::get('send','ChatController@send');
+// Route::post('send','ChatController@send');
 
